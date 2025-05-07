@@ -21,4 +21,27 @@ public class ProductModel implements Serializable {
     private BigDecimal preco;
 
     private static final long serialVersionUID = 1L;
+
+
+    //getters
+    public String getNome(){
+        return this.nome;
+    }
+    public BigDecimal getPreco(){
+        return this.preco;
+    }
+    public UUID getId(){
+        return this.id;
+    }
+    //setters
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public void setId(UUID id){
+        this.id = id;
+    }
+    public void setPreco(BigDecimal preco){
+        this.preco = preco;
+    }
+
 }
